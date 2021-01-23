@@ -35,7 +35,7 @@ Attach the trigger image to the clean data in order to get the poisoned data.
 - Run `PA.py` to get models' prediction accuracy with clean test data; and `ASR.py` to check the backdoored models' Attack Success Rate with poisoned data.
 ## Attack Methods Comparsion
 - For `Badnets`, we generate random trigger and obey the following steps
-- For `Hidden-Trigger`, we refer to: https://github.com/UMBCvision/Hidden-Trigger-Backdoor-Attacks.
+- For `Hidden-Trigger`, we refer to: [UMBCvision/Hidden-Trigger-Backdoor-Attacks](https://github.com/UMBCvision/Hidden-Trigger-Backdoor-Attacks).
 
 
 ## Defenses
@@ -43,13 +43,13 @@ Attach the trigger image to the clean data in order to get the poisoned data.
   - We prune a certain `proportion` of neurons in the convolution layer and test PA and ASR after pruning.
 
 - NeuralCleanse
-    - NC codes refer to: https://github.com/bolunwang/backdoor. 
+    - NC codes refer to: [bolunwang/backdoor](https://github.com/bolunwang/backdoor). 
     - Some of our models are `channel_first`, but the source codes are only for `channel_last` model. Therefore, we provide the corresponding modified version.
     - The source code relies on `tensorflow-gpu==1.10.1`, which is out-of-date. Thus we use `tensorflow-gpu==2.4.0`, and modify the code in  `utils_backdoor.py`.
 
     - `gtsrb_visualize_example.py` is the sample code for the cifar10 dataset
 - ABS 
-  - ABS codes refer to: https://github.com/naiyeleo/ABS. 
+  - ABS codes refer to: [naiyeleo/ABS](https://github.com/naiyeleo/ABS). 
   - Our image processing method is shown in `preprocess.py`.
 - Strip
-  - STRIP source codes refer to：https://github.com/garrisongys/STRIP.
+  - STRIP source codes refer to：[garrisongys/STRIP](https://github.com/garrisongys/STRIP).
