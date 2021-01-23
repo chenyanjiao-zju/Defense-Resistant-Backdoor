@@ -1,0 +1,28 @@
+{
+    "_comment": "====Environment====",
+    "gpu_id": "0",
+    "use_pickle": 1,
+    "use_h5": 0,
+    "random_seed": 333,
+    "img_seed_file": "cifar_seed_50.pkl",
+    "model_file": "../pytorch2keras/tests/models/cifar10_hidden_trigger_9.h5",
+    "channel_last": 0,
+    "num_classes": 10,
+    "w": 224,
+    "h": 224,
+    "reasr_bound": 0.8,
+
+    "_comment": "====Neuron Sampling====",
+    "samp_k": 1,
+    "same_range": 0,
+    "n_samples": 5,
+    "samp_batch_size": 8,
+    "top_n_neurons": 20,
+
+    "_comment": "====RE Mask====",
+    "max_troj_size": 64,
+    "mask_multi_start": 1,
+    "filter_multi_start": 1,
+    "re_mask_lr": 1e-1,
+    "re_mask_weight": 500
+}
